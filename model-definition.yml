@@ -1,0 +1,19 @@
+kind: M
+api_version: v1beta2
+metadata:
+  display_name: Move Inputs to Outputs
+  name: move-inputs-outputs
+  publisher: Newcastle University
+  summary: > 
+    This model can take output files from multiple models and combines them into one output folder.
+  source_code: https://github.com/OpenCLIM/storm-event-curve
+  description: >
+    The looped workflow function only outputs results from the final model run from the initial workflow. This model can be used as that
+    final step to combine outputs from multiple models to be publish results from a looped workflow.
+
+spec:
+  outputs:
+    datasets:
+      - name: outputs/data/
+        type: folder
+        description: path to model outputs
