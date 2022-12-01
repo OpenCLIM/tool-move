@@ -2,24 +2,6 @@ import os
 import shutil
 from os.path import isfile, join, isdir
 
-# # Define paths
-# data_path = os.getenv('DATA_PATH', r"C:\Users\nob40\OneDrive - Newcastle University\040 - Move_Inputs_To_Outputs\data")
-# inputs_path = os.path.join(data_path, 'inputs')
-# outputs_path = os.path.join(data_path, 'outputs')
-# if not os.path.exists(outputs_path):
-#     os.mkdir(outputs_path)
-
-# # fetch all files
-# for file_name in os.listdir(inputs_path):
-#     # construct full file path
-#     source = inputs_path +"\\" +file_name
-#     print(source)
-#     destination = outputs_path +"\\"+ file_name
-#     print(destination)
-#     # move only files
-#     if os.path.isfile(source):
-#         shutil.move(source, destination)
-
 # move files to output dir
 result_data_dir = '/data/inputs'
 output_data_dir = '/data/outputs'
